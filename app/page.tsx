@@ -1,4 +1,5 @@
 import axios from "axios";
+import Page from "./(auth)/signin/page";
 
 async function getUserDetails() {
   await new Promise ((r)=>setTimeout(r,5000))
@@ -18,6 +19,7 @@ export default async function Home() {
                 
                 {userData?.email}
             </div>
+            <Page/>
         </div>
     </div>
   );
